@@ -3,7 +3,8 @@ import { View, Text, ImageBackground } from "react-native";
 import StyledButton from "../StyledButton";
 import styles from "./styles";
 
-export default function CarItem({ name, tagLine, tagLineCTA, image }) {
+export default function CarItem(props) {
+  const { name, tagLine, tagLineCTA, image } = props.car;
   return (
     <View style={styles.carContainer}>
       <ImageBackground source={image} style={styles.image} />
@@ -23,7 +24,7 @@ export default function CarItem({ name, tagLine, tagLineCTA, image }) {
           }}
         />
         <StyledButton
-          content="Existing Inventor"
+          content="Existing Inventory"
           type="secondary"
           onPress={() => {
             console.warn("Existing Inventory was pressed");
