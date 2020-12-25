@@ -3,7 +3,7 @@ import { StyleSheet, Dimensions } from "react-native";
 const styles = StyleSheet.create({
   carContainer: {
     width: "100%",
-    height: Dimensions.get("window").height,
+    height: Dimensions.get("screen").height,
   },
   titles: {
     marginTop: "30%",
@@ -13,6 +13,8 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 40,
     fontWeight: "500",
+    width: "100%",
+    textAlign: "center",
   },
   subTitle: {
     fontSize: 16,
