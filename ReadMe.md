@@ -4,7 +4,7 @@ Tesla Clone created using React Native and Expo.
 
 ## Video
 
-<img src="./demo.gif" alt="Demo">
+<img height="500" src="./demo.gif" alt="Demo">
 
 ## To run locally
 
